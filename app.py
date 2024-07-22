@@ -5,7 +5,9 @@ from langchain_community.vectorstores.upstash import UpstashVectorStore
 from langchain_openai import OpenAIEmbeddings
 from langchain.docstore.document import Document
 
-embeddings = OpenAIEmbeddings(api_key=os.environ["OPENAI_API_KEY"])
+print("m9awd")
+print(os.getenv("OPENAI_API_KEY"))
+embeddings = OpenAIEmbeddings(api_key=os.getenv("OPENAI_API_KEY"))
 os.environ["UPSTASH_VECTOR_REST_URL"] = "https://nice-asp-61208-us1-vector.upstash.io"
 os.environ["UPSTASH_VECTOR_REST_TOKEN"] = "ABIFMG5pY2UtYXNwLTYxMjA4LXVzMWFkbWluTmpWak5qRTFNemN0TVdJeE15MDBaVE14TFRnMU1XTXRORFZoWW1VNU9EUXhOR0U1"
 
