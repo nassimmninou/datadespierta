@@ -1,4 +1,7 @@
 streamlit
-langhchain
+langchain
 upstash_vector
 langchain_community
+upstash_vector
+openai
+python-dotenv
